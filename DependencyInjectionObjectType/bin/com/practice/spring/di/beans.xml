@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- This is for the creating math cheat object everywhere required  -->
+	<!-- <bean id="student" class="com.practice.spring.di.Student">
+		<property name="id" value="1001"></property>
+		<property name="mathCheat">
+			<bean class="com.practice.spring.di.MathCheat"></bean>
+		</property>
+	</bean> -->
+	
+	<!-- mathcheat object create once and use this as ref wherever required. -->
+	<bean id = "mathCheatObjectValue" class="com.practice.spring.di.MathCheat"></bean>
+	
+	<bean id="student" class="com.practice.spring.di.Student">
+		<property name="id" value="1001"></property>
+		<property name="mathCheat" ref="mathCheatObjectValue"></property>
+	</bean>
+	
+	<bean id="student2" class="com.practice.spring.di.Student2">
+		<property name="cheat" ref="mathCheatObjectValue"></property>
+	</bean>
+
+</beans>

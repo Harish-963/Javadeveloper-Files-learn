@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<!-- mathcheat object create once and use this as ref wherever required. -->
+	<bean id = "mathCheatObjectValue" class="com.practice.spring.di.MathCheat"></bean>
+	
+	<!-- sciencecheat object create once and use this as ref wherever required. -->
+	<bean id = "scienceCheatObjectValue" class="com.practice.spring.di.ScienceCheat"></bean>
+	
+	<bean id="student" class="com.practice.spring.di.Student">
+		<property name="cheat" ref="scienceCheatObjectValue"></property>
+	</bean>
+
+</beans>

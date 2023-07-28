@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jspdemo/WebContent/Student-dropdownform.html&apos; to &apos;Student-dropdown-form.html&apos;" description="Rename resource &apos;Student-dropdownform.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Student-dropdownform.html" name="Student-dropdown-form.html" stamp="1675885648261" updateReferences="true"/>
+</session>

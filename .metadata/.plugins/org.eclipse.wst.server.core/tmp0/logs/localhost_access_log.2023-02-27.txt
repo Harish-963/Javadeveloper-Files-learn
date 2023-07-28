@@ -1,0 +1,9 @@
+127.0.0.1 - - [27/Feb/2023:23:16:25 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [27/Feb/2023:23:16:40 +0530] "GET /preInitilizationByAnnotation/preIntialization HTTP/1.1" 200 22
+0:0:0:0:0:0:0:1 - - [27/Feb/2023:23:16:42 +0530] "GET /preInitilizationByAnnotation/preIntialization HTTP/1.1" 200 22
+127.0.0.1 - - [27/Feb/2023:23:16:58 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [27/Feb/2023:23:16:58 +0530] "GET /preInitilizationByAnnotation/preIntialization HTTP/1.1" 200 22
+0:0:0:0:0:0:0:1 - - [27/Feb/2023:23:16:59 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [27/Feb/2023:23:25:41 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [27/Feb/2023:23:25:42 +0530] "GET /ServletListner/ListnerServlet HTTP/1.1" 200 26
+0:0:0:0:0:0:0:1 - - [27/Feb/2023:23:25:42 +0530] "GET /favicon.ico HTTP/1.1" 404 762
